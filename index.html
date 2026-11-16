@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f1e7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="הצמחים שלי" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon-180.png" />
+    <title>הצמחים שלי</title>
+    <script type="module" crossorigin src="./assets/index-ln7K9F6n.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D6UspAoI.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="wait" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M12 2.6c3.4 4.2 6.6 7.9 6.6 11.8a6.6 6.6 0 0 1-13.2 0C5.4 10.5 8.6 6.8 12 2.6z" /></svg>
+      </div>
+      <header class="top">
+        <h1>הצמחים שלי</h1>
+      </header>
+      <div id="labels"></div>
+      <div id="phead" class="phead"></div>
+      <button class="can-btn glass" type="button" aria-label="מזלף: לגרור אל הצמח">
+        <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10h9v8.2a1.3 1.3 0 0 1-1.3 1.3H5.8a1.3 1.3 0 0 1-1.3-1.3z" fill="currentColor" fill-opacity=".22" /><path d="M13.5 16 19 10" /><path d="M17.4 8.1l3 3" /><path d="M6.5 10V8.6a2.5 2.5 0 0 1 5 0V10" /></svg>
+      </button>
+      <nav id="tray" class="tray" aria-label="הצמחים"></nav>
+      <div id="dock" class="dock glass"></div>
+      <div id="pour" class="pour glass" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 40 40"><circle class="track" cx="20" cy="20" r="17" pathLength="100" /><circle class="fill" cx="20" cy="20" r="17" pathLength="100" /></svg>
+        <svg class="ico" viewBox="0 0 24 24" width="17" height="17"><path fill="currentColor" d="M12 2.6c3.4 4.2 6.6 7.9 6.6 11.8a6.6 6.6 0 0 1-13.2 0C5.4 10.5 8.6 6.8 12 2.6z" /></svg>
+        <svg class="ok" viewBox="0 0 24 24" width="19" height="19"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        <span class="pour-name"></span>
+      </div>
+      <div id="toast" class="toast" role="status"></div>
+    </div>
+  </body>
+</html>
